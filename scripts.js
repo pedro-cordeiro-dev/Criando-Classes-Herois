@@ -10,24 +10,31 @@ class heroi{
 
     atacar(){
 
-        if(tipo == "mago"){
+        if(this.tipo === "mago"){
 
-            console.log(`o ${tipo} atacou usando magia`)
+            console.log(`o ${this.tipo} atacou usando magia`)
 
-        } else if(tipo == "guerreiro"){
+        } else if(this.tipo === "guerreiro"){
 
-            console.log(`o ${tipo} atacou usando uma espada`)
+            console.log(`o ${this.tipo} atacou usando uma espada`)
 
-        } else if(tipo == "monge"){
+        } else if(this.tipo === "monge"){
 
-            console.log(`o ${tipo} atacou usando artes marciais`)
+            console.log(`o ${this.tipo} atacou usando artes marciais`)
 
-        } else if(tipo == "ninja"){
+        } else if(this.tipo === "ninja"){
 
-            console.log(`o ${tipo} atacou usando shurikens`)
+            console.log(`o ${this.tipo} atacou usando shurikens`)
 
         }
 
     }
 
 }
+
+let heroiMago = new heroi("pedro" , 34 , "mago")
+let heroiGuerreiro = new heroi("guilherme" , 28 , "guerreiro")
+
+heroiMago.atacar();
+
+heroiGuerreiro.atacar();
